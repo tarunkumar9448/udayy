@@ -1,0 +1,69 @@
+.heading,.text{
+    font-family: cursive;
+}
+
+.testiCards img{
+    max-width: 100px;
+    display: block;
+}
+.testiCards img.border{
+    border: 4px solid #ff8800 !important;
+}
+.testiCards p{
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-size: .9rem;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.testiCards p::after,
+.testiCards p::before{
+   content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 39px;
+    background-image: url(../img/quotation.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: .2;
+}
+.testiCards p::before{
+    top: -10px;
+    left: -5px;
+}
+
+.testiCards p::after{
+    bottom: -10px;
+    right: -5px;
+    transform: rotate(180deg);
+}
+
+.testiCards h5{
+    font-size: 1rem;
+    margin-bottom: 0px;
+    font-style: italic;
+    color: #002863;
+}
+.testiCards span{
+    font-size: .75rem;
+    font-style: italic;
+    color: #909090;
+    font-weight: 500;
+    display: block;
+    margin-top: 3px;
+}
+
+.owl-dots {
+    margin-top: 20px !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: #000;
+    opacity: .3;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ffffff;
+    opacity: 1;
+}
